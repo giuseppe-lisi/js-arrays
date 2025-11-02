@@ -8,6 +8,13 @@ const teachers = [
   'Luca'
 ]; // NON MODIFICARE QUESTA VARIABILE
 
+// crea lista insegnanti a caricamento pagina
+for (let i = 0; i < teachers.length; i++) {
+  let currentTeacher = teachers[i];
+  document.getElementById("teachers").innerHTML += `<div class="col text-center"><p> ${currentTeacher} </p><img style="height: 50px;" src="../img/stick-man.png"></div>`;
+  
+}
+
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
 const fourthTeacher = teachers[3];
