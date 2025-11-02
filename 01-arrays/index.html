@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <title>Arrays 01</title>
 </head>
 
@@ -22,8 +24,80 @@
 
   <main>
     <div class="container">
-      <div class="row row-cols-5 gy-4" id="teachers">
+      <div class="row row-cols-4 gy-4" id="teachers">
         <!-- TEACHER IMAGES GO HERE -->
+      </div>
+    </div>
+
+    <!-- PARTE DEDICATA ALL'UTENTE -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-8">
+          <h4>Visualizza concretamente l'esercizio</h4>
+          <p>
+            Per comprendere visivamente il codice ed i metodi utilizzati
+            e il suo effetto su un array.
+          </p>
+        </div>
+        <div class="col-4">
+          <h5>Console Output</h5>
+          <p>
+            Quì viene mostrato l'output della console.
+            Clicca i checkbox nell'ordine in cui compaiono.
+          </p>
+          <input class="form-control" type="text" disabled id="consoleOutput">
+        </div>
+        <!-- STEP ESERCIZIO -->
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays011" onchange="arrays011()">
+            <label class="form-check-label" for="arrays011">
+              Utilizzando un indice assegna alla variabile fourthTeacher il nome del quarto insegnante dell'array.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays012" onchange="arrays012()">
+            <label class="form-check-label" for="arrays012">
+              Sostituisci il quinto insegnante dell'array con Patrick
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays013" onchange="arrays013()">
+            <label class="form-check-label" for="arrays013">
+              Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays014" onchange="arrays014()">
+            <label class="form-check-label" for="arrays014">
+              Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays015" onchange="arrays015()">
+            <label class="form-check-label" for="arrays015">
+              Aggiungi un insegnante di nome Vanessa alla fine dell'array
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays016" onchange="arrays016()">
+            <label class="form-check-label" for="arrays016">
+              Aggiungi un insegnante di nome Sarah all'inizio dell'array teachers
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays017" onchange="arrays017()">
+            <label class="form-check-label" for="arrays017">
+              Trova l'indice dell'insegnante chiamato Lewis e salvalo nella variabile lewisIndex
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="arrays018" onchange="arrays018()">
+            <label class="form-check-label" for="arrays018">
+              Verifica se l'array è vuoto e salva il valore nella variabile isTeacherEmpty
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </main>
