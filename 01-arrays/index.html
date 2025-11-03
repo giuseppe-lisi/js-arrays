@@ -36,62 +36,62 @@
           <h4>Visualizza concretamente l'esercizio</h4>
           <p>
             Per comprendere visivamente il codice ed i metodi utilizzati
-            e il suo effetto su un array.
+            ed il loro effetto su un array.
+            Inizia attivando il primo checkbox per proseguire nell'esercizio.
           </p>
         </div>
         <div class="col-4">
           <h5>Console Output</h5>
           <p>
             Quì viene mostrato l'output della console.
-            Clicca i checkbox nell'ordine in cui compaiono.
           </p>
           <input class="form-control" type="text" disabled id="consoleOutput">
         </div>
         <!-- STEP ESERCIZIO -->
         <div class="col-12">
-          <div class="form-check">
+          <div class="form-check" id="check1">
             <input class="form-check-input" type="checkbox" id="arrays011" onchange="arrays011()">
             <label class="form-check-label" for="arrays011">
               Utilizzando un indice assegna alla variabile fourthTeacher il nome del quarto insegnante dell'array.
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check2" hidden>
             <input class="form-check-input" type="checkbox" id="arrays012" onchange="arrays012()">
             <label class="form-check-label" for="arrays012">
               Sostituisci il quinto insegnante dell'array con Patrick
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check3" hidden>
             <input class="form-check-input" type="checkbox" id="arrays013" onchange="arrays013()">
             <label class="form-check-label" for="arrays013">
-              Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher
+              Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher (con teachers.pop())
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check4" hidden>
             <input class="form-check-input" type="checkbox" id="arrays014" onchange="arrays014()">
             <label class="form-check-label" for="arrays014">
-              Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher
+              Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher (con teachers.shift())
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check5" hidden>
             <input class="form-check-input" type="checkbox" id="arrays015" onchange="arrays015()">
             <label class="form-check-label" for="arrays015">
-              Aggiungi un insegnante di nome Vanessa alla fine dell'array
+              Aggiungi un insegnante di nome Vanessa alla fine dell'array (con teachers.push())
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check6" hidden>
             <input class="form-check-input" type="checkbox" id="arrays016" onchange="arrays016()">
             <label class="form-check-label" for="arrays016">
-              Aggiungi un insegnante di nome Sarah all'inizio dell'array teachers
+              Aggiungi un insegnante di nome Sarah all'inizio dell'array teachers (con teachers.unshift())
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check7" hidden>
             <input class="form-check-input" type="checkbox" id="arrays017" onchange="arrays017()">
             <label class="form-check-label" for="arrays017">
-              Trova l'indice dell'insegnante chiamato Lewis e salvalo nella variabile lewisIndex
+              Trova l'indice dell'insegnante chiamato Lewis e salvalo nella variabile lewisIndex (con teachers.indexOf())
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check" id="check8" hidden>
             <input class="form-check-input" type="checkbox" id="arrays018" onchange="arrays018()">
             <label class="form-check-label" for="arrays018">
               Verifica se l'array è vuoto e salva il valore nella variabile isTeacherEmpty
